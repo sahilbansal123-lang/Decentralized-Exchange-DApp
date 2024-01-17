@@ -6,10 +6,11 @@ import Head from "next/head";
 const home = () => {
   return (
     <div>
-      <Header />
+      Hey
+      {/* <Header />
       <HeroSection />
       <Card />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

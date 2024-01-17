@@ -45,9 +45,9 @@ const myTheme = merge(midnightTheme(), {
 function MyApp({ Component, pageProps }) {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains} theme={myTheme}>
+      <rainbowKitProvider chains={chains} theme={myTheme}>
         <Component {...pageProps} />
-      </RainbowKitProvider>
+      </rainbowKitProvider>
     </WagmiConfig>
   );
 }
