@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const home = () => {
   return (
-    <div>
+    <div className="bg-[#1A1A1A]">
       Hey
       {/* <Header />
       <HeroSection />
