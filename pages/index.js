@@ -1,7 +1,17 @@
 import React from "react";
 
-const index = () => {
-  return <div>index</div>;
+import { Footer, HeroSection, Header, Card } from "../components/index";
+import Head from "next/head";
+
+const home = () => {
+  return (
+    <div>
+      <Header />
+      <HeroSection />
+      <Card />
+      <Footer />
+    </div>
+  );
 };
 
-export default index;
+export default home;
