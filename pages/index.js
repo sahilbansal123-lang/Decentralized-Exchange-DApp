@@ -6,9 +6,8 @@ import Head from "next/head";
 const home = () => {
   return (
     <div className="bg-[#1A1A1A]">
-      Hey
-      {/* <Header />
-      <HeroSection />
+      <Header />
+      {/*  <HeroSection />
       <Card />
       <Footer /> */}
     </div>
