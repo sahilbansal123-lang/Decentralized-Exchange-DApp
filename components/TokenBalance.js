@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { ethers } from "ethers";
 import toast, { Toaster } from "react-hot-toast";
 import {
-  ClipBoadIcon,
+  ClipboardIcon,
   ClipBoardCheckIcon,
   PlusIcon,
 } from "@heroicons/react/outline";
@@ -18,7 +18,7 @@ const TokenBalance = ({ name, walletAddress }) => {
   const [balance, setBalance] = useState("-");
   const [tokenAddress, setTokenAddress] = useState();
 
-  const [copyIcon, setCopyIcon] = useState({ icon: ClipBoadIcon });
+  const [copyIcon, setCopyIcon] = useState({ icon: ClipboardIcon });
   const [txPending, setTxPending] = useState(false);
 
   const notifyError = (msg) => toast.error(msg, { duration: 6000 });

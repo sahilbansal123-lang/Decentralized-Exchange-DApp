@@ -4,7 +4,7 @@ import Header from "./Header";
 import HeroSection from "./HeroSection";
 import Selector from "./Selector";
 import SingleCard from "./SingleCard";
-import SwapComponet from "./SwapComponent";
+import SwapComponent from "./SwapComponent";
 import SwapField from "./SwapField";
 import Table from "./Table";
 import TokenBalance from "./TokenBalance";
@@ -23,7 +23,7 @@ export {
   HeroSection,
   Selector,
   SingleCard,
-  SwapComponet,
+  SwapComponent,
   SwapField,
   Table,
   TokenBalance,

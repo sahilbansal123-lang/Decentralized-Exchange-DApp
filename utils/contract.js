@@ -9,7 +9,7 @@ export const tokenContract = async (address) => {
   if (ethereum) {
     const signer = provider.getSigner();
 
-    const contractReader = new ethereum.Contract(
+    const contractReader = new ethers.Contract(
       address,
       CustomTokenABI.abi,
       signer
@@ -26,7 +26,7 @@ export const contract = async () => {
   if (ethereum) {
     const signer = provider.getSigner();
 
-    const contractReader = new ethereum.Contract(
+    const contractReader = new ethers.Contract(
       "0x1776893d9973262154d0b18C27ceeeFc6865bA47",
       CustomDEXABI.abi,
       signer
