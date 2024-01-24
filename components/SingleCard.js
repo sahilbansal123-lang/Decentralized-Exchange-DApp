@@ -18,7 +18,7 @@ const SingleCard = ({ index, name, walletAddress }) => {
   const [tokenAddress, setTokenAddress] = useState();
   const [copyIcon, setCopyIcon] = useState({ icon: ClipboardIcon });
 
-  const [txPending, setTcPending] = useState(false);
+  const [txPending, setTxPending] = useState(false);
 
   const notifyError = (msg) => toast.error(msg, { duration: 6000 });
   const notifySuccess = () => toast.success("Transaction Completed.");
@@ -34,7 +34,7 @@ const SingleCard = ({ index, name, walletAddress }) => {
     const bal = await getTokenBalance(name, walletAddress);
 
     const fBal = ethers.utils.formatUnits(bal.toString(), 18);
-    setBalance(fBal.toString);
+    setBalance(fBal.toString());
   }
   async function fetchTokenAddress() {
     const address = await getTokenAddress(name);
@@ -51,7 +51,7 @@ const SingleCard = ({ index, name, walletAddress }) => {
         <img
           alt=""
           className="obect-cover w-full h-62 bg-gray-500"
-          src={`img/${index + 1}.png`}
+          src={`img/${index}.png`}
         />
       </a>
 
@@ -66,7 +66,6 @@ const SingleCard = ({ index, name, walletAddress }) => {
           href="#"
           className="text-xs tracki uppercase hover:underline text-[#7765F3]"
         >
-          {" "}
           {name} 10 M Supply
         </a>
 

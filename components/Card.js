@@ -28,7 +28,7 @@ const Card = () => {
             Exercitation occaecat irure duis aliquip tempor nulla
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg-grid-cols-4">
+        <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
           <SingleCard index={1} name={"Theter USD"} walletAddress={address} />
           <SingleCard index={2} name={"BNB"} walletAddress={address} />
           <SingleCard index={3} name={"USD Coin"} walletAddress={address} />
